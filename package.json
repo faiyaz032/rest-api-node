@@ -1,0 +1,17 @@
+{
+   "name": "rest-api-node",
+   "version": "1.0.0",
+   "description": "rest api using express, mongoose, jwt ",
+   "main": "index.js",
+   "scripts": {
+      "start": "nodemon index.js"
+   },
+   "author": "Faiyaz Rahman",
+   "license": "ISC",
+   "dependencies": {
+      "dotenv": "^10.0.0",
+      "express": "^4.17.1",
+      "jsonwebtoken": "^8.5.1",
+      "mongoose": "^5.13.2"
+   }
+}
