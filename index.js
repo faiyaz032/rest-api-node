@@ -21,7 +21,7 @@ mongoose
 
 //routers
 app.use('/user', userRouter);
-app.use('/todo', todoRouter);
+app.use('/todos', todoRouter);
 
 //error handler
 app.use(notFoundHandler);

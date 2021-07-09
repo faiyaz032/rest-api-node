@@ -4,12 +4,9 @@ function notFoundHandler(req, res, next) {
 
 function defaultErrorHandler(error, req, res, next) {
    if (res.headerSent) {
-      next('There was a problem - Header already sent');
-   } else {
-      if (error) {
-         res.status(500).json({ error: error.message });
-      }
+      return next(error);
    }
+   res.status(500).json({ error });
 }
 
 module.exports = { defaultErrorHandler, notFoundHandler };
