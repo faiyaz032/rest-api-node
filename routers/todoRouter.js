@@ -7,7 +7,7 @@ const loginCheck = require('../middlewares/loginCheck');
 
 const router = express.Router();
 
-router.post('/', createTodo);
+router.post('/', loginCheck, createTodo);
 router.get('/', loginCheck, getTodos);
 
 module.exports = router;
